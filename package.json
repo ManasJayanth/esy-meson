@@ -1,0 +1,28 @@
+{
+  "name": "esy-meson",
+  "version": "0.50.000",
+  "description": "Meson (build system) packaged for esy",
+  "esy": {
+    "buildsInSource": true,
+    "exportedEnv": {
+      "PATH": {
+        "scope": "global",
+        "val": "#{self.bin}:$PATH"
+      },
+      "PYTHONPATH": {
+        "scope": "global",
+        "val": "#{self.install}:$PYTHONPATH"
+      }
+    },
+    "buildEnv": {
+      "PYTHONPATH": "#{self.install / 'lib' / 'python3.7' / 'site-packages' }:$PYTHONPATH"
+    },
+    "install": [
+      "mkdir -p #{self.install / 'lib' / 'python3.7' / 'site-packages' }",
+      "python3 setup.py install --prefix #{self.install}"
+    ]
+  },
+  "dependencies": {
+    "esy-python": "esy-packages/esy-python#4229568c55ab77a315963b255e44cf0f43223c96"
+  }
+}

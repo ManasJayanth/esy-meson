@@ -1,0 +1,55 @@
+{
+  "checksum": "075b88fb77ed3745d55d6a734c6743b1",
+  "root": "esy-meson@link-dev:./package.json",
+  "node": {
+    "esy-zlib@github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15@d41d8cd9": {
+      "id":
+        "esy-zlib@github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15@d41d8cd9",
+      "name": "esy-zlib",
+      "version":
+        "github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "esy-python@github:esy-packages/esy-python#4229568c55ab77a315963b255e44cf0f43223c96@d41d8cd9": {
+      "id":
+        "esy-python@github:esy-packages/esy-python#4229568c55ab77a315963b255e44cf0f43223c96@d41d8cd9",
+      "name": "esy-python",
+      "version":
+        "github:esy-packages/esy-python#4229568c55ab77a315963b255e44cf0f43223c96",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:esy-packages/esy-python#4229568c55ab77a315963b255e44cf0f43223c96"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [
+        "esy-zlib@github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15@d41d8cd9"
+      ],
+      "devDependencies": []
+    },
+    "esy-meson@link-dev:./package.json": {
+      "id": "esy-meson@link-dev:./package.json",
+      "name": "esy-meson",
+      "version": "link-dev:./package.json",
+      "source": {
+        "type": "link-dev",
+        "path": ".",
+        "manifest": "package.json"
+      },
+      "overrides": [],
+      "dependencies": [
+        "esy-python@github:esy-packages/esy-python#4229568c55ab77a315963b255e44cf0f43223c96@d41d8cd9"
+      ],
+      "devDependencies": []
+    }
+  }
+}
