@@ -11,7 +11,7 @@
       },
       "PYTHONPATH": {
         "scope": "global",
-        "val": "#{self.install}:$PYTHONPATH"
+        "val": "#{meson.install / 'lib' / 'python3.7' / 'site-packages'}:$PYTHONPATH"
       }
     },
     "buildEnv": {
