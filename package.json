@@ -23,6 +23,6 @@
     ]
   },
   "dependencies": {
-    "esy-python": "esy-packages/esy-python#77384c2fbcdff28cd6639da9b57450ae1342beab"
+    "esy-python": "esy-packages/esy-python#c3abaf08ff995cb2f18cd8755b89d01377620133"
   }
 }
