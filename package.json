@@ -19,10 +19,10 @@
     },
     "install": [
       "mkdir -p #{self.install / 'lib' / 'python3.7' / 'site-packages' }",
-      "python3 setup.py install --prefix #{self.install}"
+      "python setup.py install --prefix #{self.install}"
     ]
   },
   "dependencies": {
-    "esy-python": "esy-packages/esy-python#22a58395ae687852fee64ff6e752bd1354a4f343"
+    "esy-python": "esy-packages/esy-python#77384c2fbcdff28cd6639da9b57450ae1342beab"
   }
 }
